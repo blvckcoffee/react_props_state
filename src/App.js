@@ -22,7 +22,7 @@ class App extends Component {
 
   handleBoxClick(e) {
     const newBoxes = this.state.boxes.map((box) => {
-      if (box.id === e.target.id) {
+      if (box.id == e.target.id) {
         box.color = `rgb(${this.getRandomColor()}, ${this.getRandomColor()}, ${this.getRandomColor()})`;
       }
       return box;
